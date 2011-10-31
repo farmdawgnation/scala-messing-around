@@ -86,20 +86,19 @@ object MergeSort {
     
     return aryResult
   }
+  
+  def main(args: Array[String]) {
+    println("My first Scala Merge Sort!")
+    println("WHEEEEEE")
+    println()
+
+    var aryToSort = Array(3, 1, 2, 6, 0, 2, 12)
+    var sortResult = MergeSort.sort(aryToSort)
+
+    var strResult = "Result: "
+    sortResult.foreach(strResult += _ + " ")
+    println()
+    println(strResult)
+  }
 }
 
-//////
-// Main Script
-//////
-
-println("My first Scala Merge Sort!")
-println("WHEEEEEE")
-println()
-
-var aryToSort = Array(3, 1, 2, 6, 0, 2, 12)
-var sortResult = MergeSort.sort(aryToSort)
-
-var strResult = "Result: "
-sortResult.foreach(strResult += _ + " ")
-println()
-println(strResult)
